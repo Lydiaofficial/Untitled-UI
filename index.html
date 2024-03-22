@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Untitled UI</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- header navigation -->
+        <header>
+
+            <div class="header-container">
+                <div class="logo-container">
+                    <object class="logo" type="image/svg+xml" data="./assets/logo-icon.svg"></object>
+                    <h2 class="logo-text">Untitled UI</h2>
+                </div>
+                <nav>
+    
+                    <a class="page" href="#">Home</a>
+                    <a class="page" href="#">About us<object class="arrow-down" type="image/svg+xml" data="./assets/arrow-down.svg"></object></a>
+                    <a class="page" href="#">Products<object class="arrow-down" type="image/svg+xml" data="./assets/arrow-down.svg"></object></a>
+                    <a class="page" href="#">Pricing</a>
+                    <a class="page" href="#"><object type="image/svg+xml" data="./assets/Dot.svg"></object>Blog</a>
+    
+                </nav>
+    
+                <div class="join">
+                    <button class="login-btn">Log in</button>
+                    <button class="create-btn">Create account</button>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- main content -->
+        <main role="main">
+            <!-- hero section -->
+            <section class="hero">
+                <h1>How to run a successful business with your partner (and stay together)</h1>
+                <p class="hero-sum">Starting a business with your spouse or significant other is an exciting but delicate process and requires a great deal of faith. We spoke to a dozen successful businesses about how they get it right.</p>
+                <img class="hero-image" src="./images/hero.jpg" alt="couple smiling at camera">
+
+                <div class="img-items">
+
+                    <div class="written">
+                        <p>Written by</p>
+                        <h4 class="overlay-h4">Amélie Laurent</h4>
+                    </div>
+
+                    <div class="published">
+                        <p>Published on</p>
+                        <h4 class="overlay-h4">17 Jan 2022</h4>
+                    </div>
+
+                    <div class="actions">
+                        <button class="copy"><object class="socialact" type="image/svg+xml" data="./assets/copy.svg"></object>Copy link</button>
+                        <button class="copy"><object class="socialact" type="image/svg+xml" data="./assets/linkedin.svg"></object></button>
+                        <button class="copy"><object class="socialact" type="image/svg+xml" data="./assets/facebook.svg"></object></button>
+                        <button class="copy"><object class="socialact" type="image/svg+xml" data="./assets/twitter.svg"></object></button>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- page structure -->
+            <section class="one">
+                <div class="intro format" onclick="scrollToSection('intro-section')">
+                    <div class="initial">
+                        <object type="image/svg+xml" data="./assets/Dot.svg"></object>
+                        <h4>Introduction</h4>
+                    </div>
+                    <object class="arrow-right" type="image/svg+xml" data="./assets/arrow right.svg"></object>
+                </div>
+
+                <div class="structure format" onclick="scrollToSection('structure-section')">
+                    <h4>Choosing the best structure</h4>
+                    <object class="arrow-right" type="image/svg+xml" data="./assets/arrow right.svg"></object>
+                </div>
+
+                <div class="together format" onclick="scrollToSection('together-section')">
+                    <h4>How to work well together</h4>
+                    <object class="arrow-right" type="image/svg+xml" data="./assets/arrow right.svg"></object>
+                </div>
+
+                <div class="legal format" onclick="scrollToSection('legal-section')">
+                    <h4>What legal agreements you need</h4>
+                    <object class="arrow-right" type="image/svg+xml" data="./assets/arrow right.svg"></object>
+                </div>
+
+                <div class="resources format" onclick="scrollToSection('resources-section')">
+                    <h4>More resources</h4>
+                    <object class="arrow-right" type="image/svg+xml" data="./assets/arrow right.svg"></object>
+                </div>
+
+                <div class="conclusion format" onclick="scrollToSection('conclusion-section')">
+                    <h4>Conclusion</h4>
+                    <object class="arrow-right" type="image/svg+xml" data="./assets/arrow right.svg"></object>
+                </div>
+            </section>
+
+            <!-- introduction -->
+
+            <section class="intro-section" id="intro-section">
+                <h2>Introduction</h2>
+                <p>Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend faucibus eget vestibulum felis. Dictum quis montes, sit sit. Tellus aliquam enim urna, etiam. Mauris posuere vulputate arcu amet, vitae nisi, tellus tincidunt. At feugiat sapien varius id.</p>
+               <p>Eget quis mi enim, leo lacinia pharetra, semper. Eget in <span>volutpat mollis</span>> at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit <span>tristique risus</span>, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat.</p>
+                <img class="section-image" src="./images/intro-img.jpg" alt="Image courtesy of Blake Carpenter via Unsplash">
+                <p class="small">Image courtesy of Blake Carpenter via Unsplash</p>
+                <p>Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean hac vestibulum turpis mi <span>bibendum diam</span>. Tempor integer aliquam in vitae malesuada fringilla.</p>
+                <p>Elit nisi in eleifend sed nisi. Pulvinar at orci, proin imperdiet commodo consectetur convallis risus. Sed condimentum enim dignissim adipiscing faucibus consequat, urna. Viverra purus et erat <span>auctor aliquam</span>. Risus, volutpat vulputate posuere purus sit congue convallis aliquet. Arcu id augue ut feugiat donec porttitor neque. Mauris, neque ultricies eu vestibulum, bibendum quam lorem id. Dolor lacus, eget nunc lectus in tellus, pharetra, porttitor.</p>
+                <p>Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor. Diam elit, orci, tincidunt aenean tempus. Quis velit eget ut tortor tellus. Sed vel, congue felis elit erat nam nibh orci.</p>
+                
+                <blockquote>
+                    “In a world older and more complete than ours they move finished and complete, gifted with extensions of the senses we have lost or never attained, living by voices we shall never hear.”
+                    <p class="p-quote">— Olivia Rhye, Product Designer</p>
+                </blockquote>
+                
+            </section>
+
+            <!-- structure -->
+            
+            <section class="structure-section" id="structure-section">
+
+                <h2>Choosing the best business structure</h2>
+                <p>Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit dictumst ut eget a, elementum eu. Maecenas est morbi mattis id in ac pellentesque ac.</p>
+                <p>Elit nisi in eleifend sed nisi. Pulvinar at orci, proin imperdiet commodo consectetur convallis risus. Sed condimentum enim dignissim adipiscing faucibus consequat, urna. Viverra purus et erat <span>auctor aliquam</span>. Risus, volutpat vulputate posuere purus sit congue convallis aliquet. Arcu id augue ut feugiat donec porttitor neque. Mauris, neque ultricies eu vestibulum, bibendum quam lorem id. Dolor lacus, eget nunc lectus in tellus, pharetra, porttitor.</p>
+            
+            </section>
+
+            <!-- work together -->
+
+            <section class="together-section" id="together-section">
+
+                <h2>How to work well together</h2>
+                <p>Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit dictumst ut eget a, elementum eu. Maecenas est morbi mattis id in ac pellentesque ac.</p>
+                <p>Elit nisi in eleifend sed nisi. Pulvinar at orci, proin imperdiet commodo consectetur convallis risus. Sed condimentum enim dignissim adipiscing faucibus consequat, urna. Viverra purus et erat <span>auctor aliquam</span>. Risus, volutpat vulputate posuere purus sit congue convallis aliquet. Arcu id augue ut feugiat donec porttitor neque. Mauris, neque ultricies eu vestibulum, bibendum quam lorem id. Dolor lacus, eget nunc lectus in tellus, pharetra, porttitor.</p>
+
+            </section>
+
+            <!-- legal -->
+
+            <section class="legal-section" id="legal-section">
+
+                <h2>What legal agreements you need</h2>
+                <p>agittis et eu at elementum, quis in. Proin praesent volutpat egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac. Auctor rutrum lacus malesuada massa ornare et. Vulputate consectetur ac ultrices at diam dui eget fringilla tincidunt. Arcu sit dignissim massa erat cursus vulputate gravida id. Sed quis auctor vulputate hac elementum gravida cursus dis.</p>
+                <ol>
+                    <li>
+                        <p>Lectus id duis vitae porttitor enim <span>gravida morbi</span>.</p>
+                    </li>
+
+                    <li>
+                        <p>Eu turpis <span>posuere semper feugiat</span> volutpat elit, ultrices suspendisse. Auctor vel in vitae placerat.</p>
+                    </li>
+
+                    <li>
+                        <p>Suspendisse maecenas ac <span>donec scelerisque</span> diam sed est duis purus.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- resources -->
+
+            <section class="resources-section" id="resources-section">
+
+                <h2>More resources</h2>
+                <p>Tristique odio senectus nam posuere ornare leo metus, ultricies. Blandit duis ultricies vulputate morbi feugiat cras placerat elit. Aliquam tellus lorem sed ac. Montes, sed mattis pellentesque suscipit accumsan. Cursus viverra aenean magna risus elementum faucibus molestie pellentesque. Arcu ultricies sed mauris vestibulum.</p>
+                <img class="section-image" src="./images/resources.png" alt="couple posing for camera">
+                <p>Lectus leo massa amet posuere. Malesuada mattis non convallis quisque. Libero sit et imperdiet bibendum quisque dictum vestibulum in non. Pretium ultricies tempor non est diam. Enim ut enim amet amet integer cursus. Sit ac commodo pretium sed etiam turpis.</p>
+                <p>Tristique odio senectus nam posuere ornare leo metus, ultricies. Blandit duis ultricies vulputate morbi feugiat cras placerat elit. Aliquam tellus lorem sed ac. Montes, sed mattis pellentesque suscipit accumsan. Cursus viverra aenean magna risus elementum faucibus molestie pellentesque. Arcu ultricies sed mauris vestibulum.</p>
+            </section>
+
+            <!-- conclusion -->
+
+            <section class="conclusion-section" id="conclusion-section">
+
+                <h2>Conclusion</h2>
+                <p>Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque amet nulla purus habitasse.</p>
+                <p>Nunc sed faucibus bibendum feugiat sed interdum. Ipsum egestas condimentum mi massa. In tincidunt pharetra consectetur sed duis facilisis metus. Etiam egestas in nec sed et. Quis lobortis at sit dictum eget nibh tortor commodo cursus.</p>
+                <p>Odio felis sagittis, morbi feugiat tortor vitae feugiat fusce aliquet. Nam elementum urna nisi aliquet erat dolor enim. Ornare id morbi eget ipsum. Aliquam senectus neque ut id eget consectetur dictum. Donec posuere pharetra odio consequat scelerisque et, nunc.</p>
+
+            </section>
+
+        </main>
+
+        <!-- footer -->
+
+        <footer>
+            <div class="cta-container">
+
+                <div class="cta">
+                    <h2 class="footer-h2">10x your growth with Untitled</h2>
+                    <p class="footer-p">Join over 20,000+ designers already growing with Untitled.</p>
+                </div>
+
+                <button class="cta-btn">Create account</button>
+
+            </div>
+
+           <div class="footer-pages">
+
+            <div class="footer-category">
+                <h3>PRODUCT</h3>
+                    <a href="#">Overview</a>
+                    <a href="#">Features</a>
+                    <a href="#">Solutions</a>
+                    <a href="#">Tutorials</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Releases</a>
+            </div>
+
+            <div class="footer-category">
+                <h3>COMPANY</h3>
+                    <a href="#">About us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                    <a href="#">News</a>
+                    <a href="#">Media kit</a>
+                    <a href="#">Contact</a>
+            </div>
+
+            <div class="footer-category">
+                <h3>RESOURCES</h3>
+                    <a href="#">Blog</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">Events</a>
+                    <a href="#">Help center</a>
+                    <a href="#">Tutorials</a>
+                    <a href="#">Support</a>
+            </div>
+
+            <div class="footer-category">
+                <h3>USE CASES</h3>
+                    <a href="#">Startups</a>
+                    <a href="#">Enterprise</a>
+                    <a href="#">Government</a>
+                    <a href="#">Saas</a>
+                    <a href="#">Marketplace</a>
+                    <a href="#">Ecommerce</a>
+            </div>
+
+            <div class="footer-category">
+                <h3>SOCIAL</h3>
+                    <a href="#">Twitter</a>
+                    <a href="#">Linkedin</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">AngelList</a>
+                    <a href="#">Dribbble</a>
+            </div>
+
+            <div class="footer-category">
+                <h3>LEGAL</h3>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">Licenses</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Contact</a>
+            </div>
+           </div>
+
+            <div class="copyright">
+                <p class="p-copy">© 2077 Untitled UI. All rights reserved.</p>
+                <div class="links">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+
+        <script src="script.js"></script>
+    </body>
+
+
+</html>
