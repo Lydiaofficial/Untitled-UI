@@ -541,14 +541,14 @@ button {
     }
 
     .footer-pages {
-        gap: 2em;
+        gap: 5em;
         display: grid;
         grid-template-columns: 6em 6em;
         grid-template-rows: 1fr 1fr 1fr;
     }
 
     .footer-category {
-        gap: 0.3em;
+        gap: 0.5em;
     }
 
     .copyright {
@@ -582,7 +582,7 @@ button {
 
     p {
         font-size: 1rem;
-        line-height: 1.5rem;
+       line-height: 1.752rem;
     }
 
     blockquote {
