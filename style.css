@@ -494,6 +494,7 @@ button {
     .one {
         grid-column: 1;
         max-width: 100%;
+        padding-right: 0;
     }
 
     footer {
