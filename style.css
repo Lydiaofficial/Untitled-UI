@@ -2,7 +2,6 @@
     box-sizing: border-box;  
 }
 
-html,
 body {
     margin: 0;
     padding: 0;
@@ -22,6 +21,7 @@ body {
 header {
     padding-left: 3em;
     padding-right: 3em;
+    width: 100%;
 }
 
 .header-container {
@@ -48,8 +48,9 @@ header {
 nav {
     display: flex;
     flex-direction: row;
-    gap: 1.5em;
-    margin-left: 12em;
+    justify-content: space-between;
+    gap: 1em;
+    margin-left: 7em;
 
 }
 
@@ -205,7 +206,8 @@ footer {
     line-height: 1.5625rem;
 }
 
-nav a {
+nav a,
+.dropdown-menu a {
     font-size: 1rem;
     font-style: normal;
     font-weight: 600;
@@ -213,8 +215,30 @@ nav a {
     text-decoration: none;
 }
 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 1.5em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+}
+
+.dropdown-menu.show {
+    display: block; 
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.5em 1em;
+    color: black;
+    text-decoration: none;
+}
+
 h1 {
-    font-size: 3.837rem;
+    font-size: 3.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: 5rem;
@@ -436,6 +460,12 @@ button {
     height: 1.25rem;
 }
 
+.menu-toggle {
+    width: 1.125rem;
+    height: 0.75rem;
+    cursor: pointer;
+}
+
 @media (max-width: 675px) {
 
     header {
@@ -599,5 +629,11 @@ button {
     .hero-image {
         max-height: 100%;
         margin-top: 2em;
+    }
+}
+
+@media (min-width: 676px) {
+    .menu-toggle {
+        display: none;
     }
 }
