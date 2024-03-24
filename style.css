@@ -357,7 +357,7 @@ h3 {
 /* images */
 
 .hero-image {
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
     margin-top: 4em;
     height: auto;
