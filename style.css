@@ -20,8 +20,8 @@ body {
 /* layout */
 
 header {
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 .header-container {
@@ -62,7 +62,7 @@ nav {
 }
 
 main {
-    padding: 5em;
+    padding: 3em;
     display: grid;
     grid-template-columns: minmax(auto, 50%) 1fr; 
     gap: 2rem; 
