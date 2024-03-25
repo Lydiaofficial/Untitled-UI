@@ -462,8 +462,8 @@ button {
 }
 
 .menu-toggle {
-    position: relative; /* Ensure relative positioning for absolute child */
-    z-index: 2; /* Ensure the icon appears above the dropdown */
+    position: relative;
+    z-index: 2; 
     width: 1.125rem;
     height: 0.75rem;
     cursor: pointer;
