@@ -174,7 +174,8 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 7rem;
+    justify-content: space-between;
+    max-width: 100%;
 }
 
 .copyright {
