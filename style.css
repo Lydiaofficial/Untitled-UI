@@ -314,6 +314,10 @@ blockquote {
     border-left: 2px solid #161618;
     padding-left: 1em;
     margin-left: 0;
+    position: absolute;
+    top: calc(100% + 5px); /* Adjust the distance below the icon */
+    left: 0;
+    z-index: 1; /* Ensure the menu appears below the icon */
 }
 
 .p-quote {
@@ -461,12 +465,19 @@ button {
 }
 
 .menu-toggle {
+    position: relative; /* Ensure relative positioning for absolute child */
+    z-index: 2; /* Ensure the icon appears above the dropdown */
+    cursor: pointer; /* Show pointer cursor for clickable element */
     width: 1.125rem;
     height: 0.75rem;
     cursor: pointer;
 }
 
-@media (max-width: 675px) {
+.menu-toggle.clicked + .dropdown-menu {
+    display: block;
+  }
+
+@media (max-width: 780px) {
 
     header {
         padding-left: 1em;
@@ -543,8 +554,8 @@ button {
     .footer-pages {
         gap: 5em;
         display: grid;
-        grid-template-columns: 6em 6em;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .footer-category {
@@ -599,11 +610,12 @@ button {
     }
 
     .footer-category h3 {
-        font-size: 0.8rem;
+        font-size: 0.875rem;
+        letter-spacing: 0.07rem;
     }
 
     .footer-category a {
-        font-size: 0.7rem
+        font-size: 1rem
     }
 
     .copyright  p,
@@ -630,9 +642,24 @@ button {
         max-height: 100%;
         margin-top: 2em;
     }
+
+    /* icons */
+
+    .arrow-right {
+        transform: rotate(90deg);
+    }
 }
 
-@media (min-width: 676px) {
+@media (max-width: 486px) {
+    .footer-pages {
+        gap: 5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 780px) {
     .menu-toggle {
         display: none;
     }

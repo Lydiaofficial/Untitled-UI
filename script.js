@@ -1,14 +1,19 @@
 function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
+    const section = document.getElementById(sectionId)
     if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
+        section.scrollIntoView({ behavior: 'smooth' })
     }
 }
 
-const menuIcon = document.getElementById('menu-toggle')
-const dropdownMenu = document.getElementById('dropdown-menu')
+ const menuToggle = document.querySelector('.menu-toggle')
+  const dropdownMenu = document.querySelector('.dropdown-menu')
 
-menuIcon.addEventListener('click', function() {
-    dropdownMenu.style.display = dropdownMenu.style.display === 'none' ? 'block' : 'none';
-    console.log('okay na')
-})
+  menuToggle.addEventListener('click', function () {
+    dropdownMenu.classList.toggle('clicked')
+  })
+
+  document.addEventListener('click', function (event) {
+    if (!dropdownMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+      dropdownMenu.classList.remove('clicked')
+    }
+  })
