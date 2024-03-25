@@ -5,15 +5,10 @@ function scrollToSection(sectionId) {
     }
 }
 
- const menuToggle = document.querySelector('.menu-toggle')
-  const dropdownMenu = document.querySelector('.dropdown-menu')
+const menuIcon = document.getElementById('menu-toggle')
+const dropdownMenu = document.getElementById('dropdown-menu')
 
-  menuToggle.addEventListener('click', function () {
-    dropdownMenu.classList.toggle('clicked')
-  })
-
-  document.addEventListener('click', function (event) {
-    if (!dropdownMenu.contains(event.target) && !menuToggle.contains(event.target)) {
-      dropdownMenu.classList.remove('clicked')
-    }
-  })
+menuIcon.addEventListener('click', function() {
+    dropdownMenu.style.display = dropdownMenu.style.display === 'none' ? 'block' : 'none';
+    console.log('okay na')
+})
