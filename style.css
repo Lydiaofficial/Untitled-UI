@@ -664,3 +664,9 @@ button {
     }
 }
 
+@media (min-width: 1026px) {
+    nav {
+        margin-left: 23em;
+    }
+}
+
