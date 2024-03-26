@@ -19,3 +19,21 @@ This repository contains my implementation of the Day 648 design created by Jord
 - HTML5
 - CSS3 (Flexbox and Grid for layout)
 - JavaScript (for interactive elements and animations)
+
+
+2. Open the `index.html` file in your browser to view the live implementation.
+
+3. Explore the codebase to understand the structure and implementation details.
+
+## Contributions
+
+Contributions and feedback are welcome! If you have suggestions for improvements or want to contribute enhancements, please fork the repository and submit a pull request.
+
+## Acknowledgments
+
+I would like to express my gratitude to Jordan Hughes (@jordanhughes) for sharing the design inspiration and fostering a culture of collaboration and creativity in the design community.
+
+Let's continue to inspire and innovate together!
+
+[Live Demo](https://lydiaofficial.github.io/Untitled-UI/) | [Screenshots/GIFs](#)
+
