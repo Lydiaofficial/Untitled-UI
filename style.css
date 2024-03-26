@@ -658,3 +658,9 @@ button {
     }
 }
 
+@media (max-width: 1024px) {
+    .logo-container {
+        margin-right: 3em;
+    }
+}
+
