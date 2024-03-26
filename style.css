@@ -62,7 +62,11 @@ nav {
 }
 
 main {
-    padding: 2em;
+    /* padding-top: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 3em; */
+    padding: 5em 2em;
     display: grid;
     grid-template-columns: minmax(auto, 50%) 1fr; 
     gap: 2em; 
