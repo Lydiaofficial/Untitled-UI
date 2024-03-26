@@ -1,4 +1,4 @@
-# Day 648 Design Implementation with Untitled UI
+# Design Implementation with Untitled UI
 
 ## Description
 
