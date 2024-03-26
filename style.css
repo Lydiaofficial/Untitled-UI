@@ -19,8 +19,8 @@ body {
 /* layout */
 
 header {
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
     width: 100%;
 }
 
@@ -38,7 +38,7 @@ header {
     gap: 0.8em;
     cursor: pointer;
     max-width: 100%;
-    margin-right: 3em;;
+    margin-right: 7em;
 }
 
 .join {
@@ -62,7 +62,7 @@ nav {
 }
 
 main {
-    padding: 3em;
+    padding: 2em;
     display: grid;
     grid-template-columns: minmax(auto, 50%) 1fr; 
     gap: 2em; 
@@ -190,9 +190,9 @@ main {
 footer {
     display: flex;
     flex-direction: column;
-    padding-left: 5rem;
+    padding-left: 2rem;
     padding-top: 6rem;
-    padding-right: 5rem;
+    padding-right: 2rem;
     background: #161618;
     gap: 5.5rem;
 }
@@ -238,7 +238,7 @@ nav a,
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 600;
     line-height: 5rem;
@@ -657,3 +657,4 @@ button {
         display: none;
     }
 }
+
